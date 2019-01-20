@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+</head>
+
+<body>
+  <form action="process.php" method="post">
+    <!-- input is a line element not a block level element so use <br> or <p> to separate them into lines  -->
+    <p>Name
+      <input name="name" type="text" />
+    </p>
+    <p>Your Picture
+      <input type="file" name="picture" /> <br />
+    </p>
+    <p>Email
+      <input type="email" name="email" /> <br />
+    </p>
+    <p>Password
+      <input type="password" name="password" /> <br />
+    </p>
+    <p>Submit
+      <input type="submit" name="submit" /> <br />
+    </p>
+
+
+    <!-- The <label> tag allows you to click on the label, and it will be treated like clicking on the associated input element. There are two ways to create this association: -->
+    <!-- This is especially useful for use with checkboxes and buttons, since it means you can check the box by clicking on the associated text instead of having to hit the box itself. -->
+    <label>Input here:
+      <input type='text' name='theinput1' id='theinput1'>
+    </label><br />
+
+    <label for="theinput2">Input here:</label>
+    <input type='text' name='whatever' id='theinput2'>
+
+  </form>
+
+</body>
+
+</html>
