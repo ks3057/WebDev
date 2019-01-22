@@ -70,3 +70,8 @@ a:hover {
   color: red;
   font-size: 14px;
 }
+
+.success {
+  color: green;
+  font-size: 14px;
+}
