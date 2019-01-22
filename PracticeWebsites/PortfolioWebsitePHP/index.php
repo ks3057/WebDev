@@ -35,11 +35,12 @@
         <h2>Kirtana Suresh</h2>
       </header>
       <div class="image">
-        <img class="profile-pic" src="images/me.jpg" alt="A photo of me on the banks of Genesee river"><br>
+        <img class="profile-pic" src="images/pic1.jpg" alt="A photo of me on the banks of Genesee river"><br>
         <!-- image-close -->
       </div>
-      Hi everyone, my name is Kirtana! <br>
-      I'm from Nagpur, India and i currently live in Rochester, NY. I'm an MS Software Engineering student at Rochester Institute of Technology.
+      Hi everyone, my name is Kirtana. <br>
+      I'm from Nagpur, India and I currently live in Rochester, NY. I'm an MS Software Engineering student at Rochester Institute of Technology.<br>
+      <strong>Email: ks3057 [at] rit [dot] edu</strong>
       <!-- content-close -->
     </div>
 
@@ -60,10 +61,9 @@
         if (isset($_POST['contact_submit'])) {
 
             // Assign trimmed form data to variables
-            // Note that the value within the $_POST array is looking for the HTML "name" attribute, i.e. name="email"
             $name	= trim($_POST['name']);
             $email	= trim($_POST['email']);
-            $msg	= $_POST['message']; // no need to trim message
+            $msg	= $_POST['message'];
             $name_error = $email_error = $success_msg = "";
 
             // Check to see if $name or $email have header injections
@@ -73,6 +73,10 @@
 
             if (empty($_POST["name"])) {
                 $name_error = "Name is required";
+            } else {
+                if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+                    $nameErr = "Name can contain only letters and white space";
+                }
             }
 
             if (empty($_POST["email"])) {
@@ -91,7 +95,7 @@
             $headers = "From: ".$email;
             $headers .= "\r\n" ."CC: ".$email;
 
-            // Create a subject
+            //Create a subject
             $subject = "$name sent a message via contact form";
 
             // Send the email!
@@ -120,12 +124,16 @@
       <!-- form-close -->
     </div>
 
-    <footer class="links">
-
-    </footer>
-
     <!-- container-close -->
   </div>
+
+  <footer class="links">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/kirtana-suresh" target="_blank"><img src="images/linkedin.png" /></a></li>
+      <li><a href="https://github.com/ks3057" target="_blank"><img src="images/GitHub.png" /></a></li>
+    </ul>
+  </footer>
+
 </body>
 
 </html>
