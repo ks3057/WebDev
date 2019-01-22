@@ -1,0 +1,64 @@
+body {
+  background: white;
+  margin: 0;
+}
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+  background: snow;
+}
+
+.header {
+  padding: 45px 0px 20px 40px;
+}
+
+.menu {
+  background: grey;
+  padding: 6px 0 6px 40px;
+}
+
+.menu a {
+  color: seashell;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Times New Roman", "Georgia", serif;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+aside {
+  float: left;
+  width: 120px;
+  padding: 30px 0 0 40px;
+}
+
+h1 {
+  margin: 0px;
+  color: green;
+  font-size: 24px;
+  font-family: "Times New Roman", "Georgia", serif;
+  font-weight: normal;
+}
+
+.main {
+  margin: 0 0 0 180px;
+  text-align: justify;
+  line-height: 18px;
+  padding: 35px 40px 30px 0;
+}
+
+footer {
+  padding: 6px 40px 6px 40px;
+  text-align: center;
+  background: #d6d6d6;
+  font-family: "Lucida Sans Unicode";
+  font-size: 14px;
+}
+
+.separator {
+  color: white;
+  font-size: 11px;
+}

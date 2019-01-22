@@ -1,0 +1,72 @@
+body {
+  background-color: gray;
+}
+
+@media(min-width:768px) {
+  .container {
+    font-family: Helvetica Neue;
+    background: white;
+    display: flex;
+  }
+}
+
+.assignments {
+  margin: 0;
+  border: 20px solid grey;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.assignments ul {
+  list-style-type: none;
+  font-weight: bolder;
+  margin: 20px;
+  padding: 0;
+}
+
+.assignments ul li {
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: pink;
+}
+
+.profile-pic {
+  padding: 10px;
+  border-radius: 50%;
+  width: 70%;
+}
+
+.content {
+  border: 20px solid grey;
+  text-align: center;
+  padding: 30px 15px 30px 15px;
+  line-height: 23px;
+  flex: 2;
+}
+
+.form {
+  border: 20px solid grey;
+  padding: 20px 0 0 20px;
+  line-height: 23px;
+  flex: 1;
+}
+
+.form label, input, textarea, span {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 240px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
